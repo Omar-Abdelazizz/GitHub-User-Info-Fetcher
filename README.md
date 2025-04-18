@@ -12,10 +12,12 @@ A simple web app that allows you to fetch and display basic information about an
 - Responsive, modern design using vanilla HTML, CSS, and JavaScript
 
 ## 💡 Technologies Used
--HTML
--CSS
--JavaScript (Fetch API)
+  - HTML
+  
+  - CSS
+  
+  - JavaScript (Fetch API)
 
 ## 📜 License
-This project is licensed under the MIT License — feel free to use and modify it.
+- This project is licensed under the MIT License — feel free to use and modify it.
 
