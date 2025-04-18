@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Information Fetcher</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #1f4037, #99f2c8);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      input[type="text"] {
+        padding: 10px 15px;
+        width: 250px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        outline: none;
+        font-size: 16px;
+        transition: all 0.3s;
+      }
+
+      input[type="text"]:focus {
+        border-color: #4caf50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #user-info {
+        margin-top: 30px;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      #user-info h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      #user-info p {
+        margin: 6px 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GitHub User Information</h1>
+    <input id="username" type="text" placeholder="Enter a GitHub username" />
+    <button id="fetch-btn">User Info</button>
+    <div id="user-info"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
